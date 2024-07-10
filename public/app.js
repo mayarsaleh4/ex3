@@ -39,13 +39,13 @@ const addRow = (container, content) => {
 
 const addMonitor = (container, text) => {
     const t = text ?? ''
-    const monitor = `<div id='monitor' class="bg-white border-4 border-blue-400 h-20 flex items-center col-span-5 text-blue-800 p-2 rounded-lg mb-2 font-bold text-4xl">${t}</div>`
+    const monitor = `<div id='monitor' class="bg-white border-4 border-pink-400 h-20 flex items-center col-span-5 text-pink-800 p-2 rounded-lg mb-2 font-bold text-4xl">${t}</div>`
     container.insertAdjacentHTML('beforeend', monitor)
 }
 
 const button = (text) => {
     const c = text === 'calculate' ? 'col-span-4' : ''
-    return `<div class='bg-blue-400 hover:bg-blue-600 text-white ${c} py-1 rounded-md text-center text-lg font-bold cursor-pointer d-btn'>${text}</div>`
+    return `<div class='bg-pink-400 hover:bg-pink-600 text-white ${c} py-1 rounded-md text-center text-lg font-bold cursor-pointer d-btn'>${text}</div>`
 }
 
 const addButtons = (container, nums) => {
